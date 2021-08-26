@@ -3,28 +3,32 @@ import { Link } from "gatsby";
 
 import "../styles/index.css";
 
-import Footer from "../components/Footer";
-
 // markup
 const IndexPage = () => {
   const [currentCanvas, setCanvas] = React.useState(null);
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
 
   React.useEffect(() => {
     var canvas: any = document.getElementById("space_box");
     if (canvas) setCanvas(canvas);
+    window.addEventListener('resize', handleResize);
   }, []);
 
-  if (currentCanvas) {
-    var c = currentCanvas.getContext("2d");
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  }
 
-    var innerWidth = window.innerWidth,
-      innerHeight = window.innerHeight,
-      radius = 1,
+  if (currentCanvas) {
+    let canvas = currentCanvas.getContext("2d");
+    
+    let radius = 1,
       starsIndex = 0,
       stars = [],
       TWO_PI = Math.PI * 2,
-      centerX = innerWidth / 2,
-      centerY = innerHeight / 2,
+      centerX = windowWidth / 2,
+      centerY = windowHeight / 2,
       focalLength = 100,
       starRadius = null,
       starX = null,
@@ -33,13 +37,13 @@ const IndexPage = () => {
       mouse = {},
       starX_dir = 0,
       starY_dir = 0,
-      smallCircleX = innerWidth / 2,
-      smallCircleY = innerHeight / 2;
+      smallCircleX = windowWidth / 2,
+      smallCircleY = windowHeight / 2;
 
-    currentCanvas.width = innerWidth;
-    currentCanvas.height = innerHeight;
+    currentCanvas.width = windowWidth;
+    currentCanvas.height = windowHeight;
 
-    var grd = c.createRadialGradient(
+    let grd = canvas.createRadialGradient(
       smallCircleX,
       smallCircleY,
       1,
@@ -63,8 +67,8 @@ const IndexPage = () => {
           focalLength /= 1.1;
         }
 
-        if (focalLength >= innerWidth) {
-          focalLength = innerWidth - 20;
+        if (focalLength >= windowWidth) {
+          focalLength = windowWidth - 20;
         } else if (focalLength < 100) {
           focalLength = 100;
         }
@@ -73,7 +77,7 @@ const IndexPage = () => {
     );
 
     // Function for create new start
-    function star(x, y, z) {
+    function renderStar(x, y, z) {
       this.x = x;
       this.y = y;
       this.z = z;
@@ -99,7 +103,7 @@ const IndexPage = () => {
         this.z += -1;
 
         if (this.z <= 0) {
-          this.z = innerWidth;
+          this.z = windowWidth;
         }
 
         this.draw();
@@ -107,30 +111,29 @@ const IndexPage = () => {
 
       // Function for draw star
       this.draw = function () {
-        c.beginPath();
-        c.arc(starX, starY, starRadius, TWO_PI, false);
-        c.fillStyle = this.color;
-        c.fill();
-        c.closePath();
+        canvas.beginPath();
+        canvas.arc(starX, starY, starRadius, TWO_PI, false);
+        canvas.fillStyle = this.color;
+        canvas.fill();
+        canvas.closePath();
       };
     }
 
     // X,Y,Z values
-    var s;
-    for (s = 0; s < numStars; s++) {
-      const x = Math.random() * innerWidth;
-      const y = Math.random() * innerHeight;
-      const z = Math.random() * innerWidth;
-      new star(x, y, z);
+    for (let s = 0; s < numStars; s++) {
+      const x = Math.random() * windowWidth;
+      const y = Math.random() * windowHeight;
+      const z = Math.random() * windowWidth;
+      new renderStar(x, y, z);
     }
 
     // Function for animate canvas objects
     const animate = () => {
       requestAnimationFrame(animate);
-      c.fillStyle = grd;
-      c.fillRect(0, 0, innerWidth, innerHeight);
+      canvas.fillStyle = grd;
+      canvas.fillRect(0, 0, windowWidth, windowHeight);
 
-      for (var i in stars) {
+      for (let i in stars) {
         stars[i].update();
       }
     };
@@ -150,7 +153,7 @@ const IndexPage = () => {
             </div>
             <p id="f2">4</p>
           </div>
-          <p id="info">I bet you are looking for the projects.</p>
+          <p id="info">I bet you are looking for some projects.</p>
           <div id="btn">
             <Link to="/projects">Projects</Link>
           </div>
@@ -170,7 +173,6 @@ const IndexPage = () => {
 
         <canvas id="space_box" />
       </div>
-      <Footer />
     </>
   );
 };

@@ -1,6 +1,10 @@
 /*==== FONTS ====*/
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap");
 
+body {
+  margin: 0;
+}
+
 /*==== HOME ====*/
 .home {
   overflow: hidden;
@@ -105,7 +109,7 @@
   border-left: 1px solid transparent;
   border-radius: 50%;
   position: absolute;
-  top: 47%;
+  top: 49.5%;
   left: 50%;
   transform: translate(-50%, -50%) rotateZ(45deg);
 }
