@@ -4778,24 +4778,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*************************************************************************************************!*\
-  !*** external "/Users/radeonxz/Desktop/Projects/Portfolio-V2/node_modules/react-dom/server.js" ***!
-  \*************************************************************************************************/
+/*!**********************************************************************************************************************!*\
+  !*** external "C:\\Users\\RadeonXz-2600\\Desktop\\Temp\\Projects\\Portfolio-V2\\node_modules\\react-dom\\server.js" ***!
+  \**********************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/radeonxz/Desktop/Projects/Portfolio-V2/node_modules/react-dom/server.js");;
+module.exports = require("C:\\Users\\RadeonXz-2600\\Desktop\\Temp\\Projects\\Portfolio-V2\\node_modules\\react-dom\\server.js");;
 
 /***/ }),
 
 /***/ "react":
-/*!********************************************************************************************!*\
-  !*** external "/Users/radeonxz/Desktop/Projects/Portfolio-V2/node_modules/react/index.js" ***!
-  \********************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** external "C:\\Users\\RadeonXz-2600\\Desktop\\Temp\\Projects\\Portfolio-V2\\node_modules\\react\\index.js" ***!
+  \*****************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/radeonxz/Desktop/Projects/Portfolio-V2/node_modules/react/index.js");;
+module.exports = require("C:\\Users\\RadeonXz-2600\\Desktop\\Temp\\Projects\\Portfolio-V2\\node_modules\\react\\index.js");;
 
 /***/ })
 
