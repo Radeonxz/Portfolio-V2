@@ -11,6 +11,7 @@ const ProjectsPage = () => {
 		<div className="main">
 			<ProjectsMenu />
 			<ProjectCard />
+			<Footer />
 		</div>
 	);
 };
