@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 1200px) {
 	.box {
-		height: 27rem;
+		height: 23rem;
 	}
 }
 
@@ -33,10 +33,11 @@
 }
 
 .box .imgBox {
+	max-height: 23rem;
 	position: relative;
 }
 
-.box .imgBox img {
+.box .imgBox .img-responsive {
 	transition: 0.5s;
 }
 

@@ -1,11 +1,13 @@
 import * as React from "react";
 
+import "./styles.css";
+
 const Footer = () => {
-  return (
-    <footer>
-      <p>Created By - {new Date().getFullYear()}</p>
-    </footer>
-  );
+	return (
+		<footer className="footer-container">
+			<p>&#169; Xz - {new Date().getFullYear()}</p>
+		</footer>
+	);
 };
 
 export default Footer;
