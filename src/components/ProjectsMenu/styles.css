@@ -1,46 +1,46 @@
 .menu {
-  position: absolute;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.3);
+	/* position: absolute; */
+	width: 100%;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav ul {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  width: 100%;
-  padding: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	width: 100%;
+	padding: 0;
 }
 
 .nav ul li {
-  font-size: 2rem;
-  display: inline-block;
-  list-style: none;
-  padding: 0 2rem 0 2rem;
-  text-align: center;
-  width: 10rem;
+	font-size: 2rem;
+	display: inline-block;
+	list-style: none;
+	padding: 0 2rem 0 2rem;
+	text-align: center;
+	width: 10rem;
 }
 
 .nav ul li a {
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 2rem;
 }
 
 .nav ul li a:hover {
-  color: coral;
+	color: coral;
 }
 
 .nav ul li a.active {
-  color: coral;
+	color: coral;
 }

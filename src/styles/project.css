@@ -1,0 +1,18 @@
+/*==== PROJECTS ====*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.main {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(
+		135deg,
+		rgba(160, 255, 139, 1) 0%,
+		rgba(63, 146, 255, 1) 100%
+	);
+}
