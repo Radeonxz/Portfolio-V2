@@ -2,35 +2,35 @@
 	"projects": [
 		{
 			"name": "Unicornsity",
-			"image": "../../images/jidps.png",
+			"image": "unicornsity.png",
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
 		},
 		{
 			"name": "Foobar",
-			"image": "../../images/jidps.png",
+			"image": "banner.png",
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
 		},
 		{
 			"name": "Baz",
-			"image": "../../images/jidps.png",
+			"image": "",
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
 		},
 		{
 			"name": "Bazss",
-			"image": "../../images/jidps.png",
+			"image": "unicornsity.png",
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
 		},
 		{
 			"name": "Bazsssss",
-			"image": "../../images/jidps.png",
+			"image": "unicornsity.png",
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
