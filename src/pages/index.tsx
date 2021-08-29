@@ -6,21 +6,25 @@ import StaticStars from "../components/StaticStars";
 
 import "../styles/index.css";
 
+const isBrowser = typeof window !== "undefined";
+
 const IndexPage = () => {
 	const [canvas, setCanvas] = React.useState<HTMLCanvasElement>(null);
 	const [currentCanvas, setCurrentCanvas] = React.useState<any>(null);
 	const [windowWidth, setWindowWidth] = React.useState<number>(
-		window.innerWidth
+		isBrowser ? window.innerWidth : null
 	);
 	const [windowHeight, setWindowHeight] = React.useState<number>(
-		window.innerHeight
+		isBrowser ? window.innerHeight : null
 	);
 
 	React.useLayoutEffect(() => {
-		window.addEventListener("resize", handleResize);
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
+		if (isBrowser) {
+			window.addEventListener("resize", handleResize);
+			return () => {
+				window.removeEventListener("resize", handleResize);
+			};
+		}
 	}, []);
 
 	React.useEffect(() => {
@@ -33,8 +37,10 @@ const IndexPage = () => {
 	}, [windowWidth, windowHeight]);
 
 	const handleResize = () => {
-		setWindowWidth(window.innerWidth);
-		setWindowHeight(window.innerHeight);
+		if (isBrowser) {
+			setWindowWidth(window.innerWidth);
+			setWindowHeight(window.innerHeight);
+		}
 	};
 
 	if (canvas) {
