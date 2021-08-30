@@ -16,5 +16,13 @@ module.exports = {
 				path: path.join(__dirname, `src`, `images`),
 			},
 		},
+		{
+			resolve: `gatsby-plugin-manifest`,
+			options: {
+				start_url: "/",
+				display: "standalone",
+				icon: "src/images/gatsby-icon.png",
+			},
+		},
 	],
 };
