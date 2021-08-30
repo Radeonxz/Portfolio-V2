@@ -6,34 +6,6 @@
 			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
 			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
-		},
-		{
-			"name": "Foobar",
-			"image": "banner.png",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
-			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
-		},
-		{
-			"name": "Baz",
-			"image": "",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
-			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
-		},
-		{
-			"name": "Bazss",
-			"image": "unicornsity.png",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
-			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
-		},
-		{
-			"name": "Bazsssss",
-			"image": "unicornsity.png",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
-			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
 		}
 	]
 }

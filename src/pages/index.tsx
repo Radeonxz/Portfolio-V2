@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "gatsby";
 
 import { renderGrd, renderStar } from "../helpers/renderMethods";
@@ -9,16 +9,16 @@ import "../styles/index.css";
 const isBrowser = typeof window !== "undefined";
 
 const IndexPage = () => {
-	const [canvas, setCanvas] = React.useState<HTMLCanvasElement>(null);
-	const [currentCanvas, setCurrentCanvas] = React.useState<any>(null);
-	const [windowWidth, setWindowWidth] = React.useState<number>(
+	const [canvas, setCanvas] = useState<HTMLCanvasElement>(null);
+	const [currentCanvas, setCurrentCanvas] = useState<any>(null);
+	const [windowWidth, setWindowWidth] = useState<number>(
 		isBrowser ? window.innerWidth : null
 	);
-	const [windowHeight, setWindowHeight] = React.useState<number>(
+	const [windowHeight, setWindowHeight] = useState<number>(
 		isBrowser ? window.innerHeight : null
 	);
 
-	React.useLayoutEffect(() => {
+	useLayoutEffect(() => {
 		if (isBrowser) {
 			window.addEventListener("resize", handleResize);
 			return () => {
@@ -27,7 +27,7 @@ const IndexPage = () => {
 		}
 	}, []);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		var selectedCanvas: any = document.getElementById("space_box");
 		if (selectedCanvas) {
 			let canvasContext = selectedCanvas.getContext("2d");
@@ -38,8 +38,7 @@ const IndexPage = () => {
 
 	const handleResize = () => {
 		if (isBrowser) {
-			setWindowWidth(window.innerWidth);
-			setWindowHeight(window.innerHeight);
+			window.location.reload();
 		}
 	};
 
@@ -47,8 +46,8 @@ const IndexPage = () => {
 		canvas.width = windowWidth;
 		canvas.height = windowHeight;
 		let stars = [];
-		let focalLength = Math.floor((windowWidth * windowHeight) / 20000);
-		let numStars = Math.floor((windowWidth * windowHeight) / 4000);
+		const focalLength = Math.floor((windowWidth * windowHeight) / 20000);
+		const numStars = Math.floor((windowWidth * windowHeight) / 4000);
 
 		// star x,y,z values
 		for (let s = 0; s < numStars; s++) {
