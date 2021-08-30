@@ -1,9 +1,3 @@
-.projects-container {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-}
-
 .project-card {
 	width: 30%;
 	min-width: 50rem;
@@ -74,17 +68,20 @@
 }
 
 .box .content small {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: #fff;
-	font-weight: 400;
+	font-weight: 200;
+	font-style: italic;
 }
 
 .box .content .btnD {
 	border: none;
 	background: coral;
 	color: #fff;
+	text-decoration: none;
 	font-size: 1.4rem;
-	padding: 1rem 2rem;
+	padding: 0.5rem 1rem;
+	margin: 0 0.2rem;
 	font-weight: 700;
 	transition: 0.5s;
 }

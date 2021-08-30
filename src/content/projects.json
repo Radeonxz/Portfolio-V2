@@ -3,9 +3,9 @@
 		{
 			"name": "Unicornsity",
 			"image": "unicornsity.png",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<small>*Loading latency due to awakening heroku free dyno.</small></p>",
+			"description": "<p>CRUD ExpressJS site with user registration and administration management.<br/><small>*Loading latency due to awakening heroku dyno.</small></p>",
 			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity-Express"
+			"repoLink": "https://github.com/Radeonxz/Unicornsity"
 		}
 	]
 }
