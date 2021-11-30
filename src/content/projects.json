@@ -1,11 +1,39 @@
 {
-	"projects": [
-		{
-			"name": "Unicornsity",
-			"image": "unicornsity.png",
-			"description": "<p>CRUD ExpressJS site with user registration and administration management.<br/><small>*Loading latency due to awakening heroku dyno.</small></p>",
-			"siteLink": "https://unicornsity.herokuapp.com",
-			"repoLink": "https://github.com/Radeonxz/Unicornsity"
-		}
-	]
+  "projects": [
+    {
+      "name": "JIDPS",
+      "image": "jidps.png",
+      "description": "<p>Migrated from Django to Drupal, mainly developed frontend layouts and templates.<br/></p>",
+      "siteLink": "https://jidps.rndsphere.com",
+      "repoLink": ""
+    },
+    {
+      "name": "Unicornsity",
+      "image": "unicornsity.png",
+      "description": "<p>CRUD ExpressJS and MongoDB site with user registration and administration management.<br/><small>*Loading latency due to awakening heroku dyno.</small></p>",
+      "siteLink": "https://unicornsity.herokuapp.com",
+      "repoLink": "https://github.com/Radeonxz/Unicornsity"
+    },
+    {
+      "name": "ToolKiits",
+      "image": "",
+      "description": "<p>Miscellaneous useful stuff.",
+      "siteLink": "",
+      "repoLink": "https://github.com/Radeonxz/ToolKiits"
+    },
+    {
+      "name": "React Starter Kit",
+      "image": "reactStarterKit.png",
+      "description": "<p>JS and TS versions to bootstrap React applications with Redux store setup, localization support, and theme switch.",
+      "siteLink": "https://radeonxz.github.io/React-Starter-Kit",
+      "repoLink": "https://github.com/Radeonxz/React-Starter-Kit"
+    },
+    {
+      "name": "CheckDiffer",
+      "image": "checkDiffer.png",
+      "description": "<p>Handy online tool to check texts and json objects difference.",
+      "siteLink": "https://radeonxz.github.io/Check-Differ",
+      "repoLink": "https://github.com/Radeonxz/Check-Differ"
+    }
+  ]
 }
