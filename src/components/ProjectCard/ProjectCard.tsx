@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+// import { StaticImage } from "gatsby-plugin-image";
 import { FaGithub } from "react-icons/fa";
 
 import Image from "../Image";
@@ -26,7 +26,13 @@ const ProjectCard = ({
     <div className="project-card">
       <div className="box">
         <div className="imgBox">
-          {image ? (
+          <Image
+            className="img-responsive"
+            style={{ width: "100%", height: "25rem" }}
+            src={image || "git.png"}
+            alt={name}
+          />
+          {/* {image ? (
             <Image
               className="img-responsive"
               style={{ width: "100%", height: "25rem" }}
@@ -40,7 +46,7 @@ const ProjectCard = ({
               src="https://mocah.org/uploads/posts/520226-GitHub-Git.jpg"
               alt={name}
             />
-          )}
+          )} */}
         </div>
         <div className="content">
           <h3>{name}</h3>
